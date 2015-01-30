@@ -1,4 +1,3 @@
-@import "elements.less";
 
 .calendar{
 	background: #fff;
@@ -14,14 +13,15 @@
 			
 		height: 17%;
 		margin: 13% 0 0;
-
-		color: @red;
+		float: left;
+		width:  100%;
+		color: $red;
 		
 		p{
 			margin: 0;
 			line-height: 1;
-			font-size: 125%;
 			letter-spacing: -2px;
+			@include font-size(40px);
 		}
 
 		.inner{
@@ -50,7 +50,6 @@
 		position: absolute;
 		top: 38%;
 		left: 23%;
-		//background: rgba(0,0,0,.2);
 		overflow: hidden;
 		display: block;
 		width: 12%;
@@ -70,8 +69,8 @@
 			display: block;
 			border: 3px solid #000;
 
-			-webkit-transform: rotateZ(-51deg);
-			.rounded(50%);
+			transform: rotateZ(-51deg);
+			border-radius: 50%;
 		}
 	}
 
@@ -85,6 +84,6 @@
 		height: 44%;
 		border: 3px solid #000;
 
-		.rounded(47%);
+		border-radius: 47%;
 	}
 }

@@ -1,7 +1,6 @@
-@import "elements.less";
 
 .weather{
-	.gradient(#1e78f3, #81f3fd, #1e78f3);
+	background: linear-gradient(#1e78f3, #81f3fd);
 
 	&:after{
 		content: 'Weather';
@@ -20,10 +19,10 @@
 
 		background: #ffdc00;
 
-		.gradient(#fedf00, #fedf00, #ffbe00);
-		.rounded(50%);
+		background: linear-gradient(#ffbe00, #fedf00);
+		border-radius: 50%;
 
-		-webkit-transition: .3s all ease;
+		transition: .3s all ease;
 	}
 
 	.clouds{
@@ -38,7 +37,7 @@
 		display: block;
 		opacity: .8;
 
-		-webkit-transition: .3s all ease;
+		transition: .3s all ease;
 
 
 		.cloud{
@@ -47,7 +46,7 @@
 
 			display: block;
 
-			.rounded(50%);
+			border-radius: 50%;
 		}
 
 		.small{
@@ -87,11 +86,12 @@
 
 	&:hover{
 		.sun{
-			-webkit-transform: translate3d(-5%, 0,0);
+			transform: translate3d(-5%, 0,0);
 		}
 
 		.clouds{
-			-webkit-transform: translate3d(5%, 0,0);
+			transform: translate3d(5%, 0,0);
 		}
 	}
 }
+

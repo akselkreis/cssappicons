@@ -1,0 +1,36 @@
+*{
+	box-sizing: border-box;
+	@include font-fix();
+}
+
+html{
+	font-size: $base-font-size;
+}
+
+body{
+	background: gray;
+	color: $white;
+	font-family: 'HelveticaNeue-Light', Helvetica, sans-serif;
+	text-align: center;
+
+}
+
+
+h1{
+	margin: 0;
+	@include font-size(60px); 
+
+	span{
+		font-weight: normal;
+
+
+	}
+}
+
+a{
+	color: $black;
+
+	&:hover{
+		color: lighten($black, 20%);
+	}
+}

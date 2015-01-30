@@ -1,5 +1,3 @@
-@import "elements.less";
-
 .passbook{
 
 	.passbookWrap{
@@ -8,18 +6,18 @@
 		width: 100%;
 		height: 100%;
 
-		.rounded(22.53125%);
+		border-radius: 22.53125%;
 	}
 
 	&:after{
-		content: 'Passbook';
+		content: 'Passbook (iOS 7)';
 	}
 
 	.travel{
 		width: 100%;
 		height: 41.025641025641%;
 
-		.gradient(#4a9acb,#4a9acb,#58bbfa);
+		background: linear-gradient(#58bbfa, #4a9acb);
 	}
 
 	.movies{
@@ -29,8 +27,8 @@
 		height: 38.461538461538%;
 		margin-top: -9.8%;
 
-		.box-shadow(0 -5px 5px rgba(0,0,0,.1));
-		.gradient(#2bb603,#2bb603,#45d100);
+		box-shadow: 0 -5px 5px rgba(0,0,0,.1);
+		background: linear-gradient(#45d100,#2bb603);
 
 		&:before{
 			content: '';
@@ -43,9 +41,9 @@
 			width: 25%;
 			height: 65%;
 
-			.gradient(#4a9acb,#4a9acb,#52ade6);
-			.inner-shadow(0, -5px, 2px, 0.1);
-			.rounded(50%);
+			background: linear-gradient(#52ade6,#4a9acb);
+			box-shadow: inset 0 -5px 2px rgba(0,0,0,.1);
+			border-radius: 50%;
 
 		}
 
@@ -53,7 +51,7 @@
 			top: 17%;
 
 
-			-webkit-transform: scale(.9,.9);
+			transform: scale(.9,.9);
 		}
 
 		.projectorBody{
@@ -64,7 +62,7 @@
 			background: #fff;
 			width: 70%;
 			height: 50%;
-			.rounded(1px);
+			border-radius: 1px;
 
 			&:before, &:after{
 				content: '';
@@ -80,7 +78,7 @@
 				width: 7px;
 				height: 7px;
 
-				.rounded(50%);
+				border-radius: 50%;
 			}
 
 			&:after{
@@ -104,7 +102,7 @@
 				border: 10px solid transparent;
 				border-right-color: #fff;
 
-				-webkit-transform: scale(.9);
+				transform: scale(.9);
 			}
 	}
 
@@ -115,7 +113,7 @@
 		height: 38.461538461538%;
 
 		box-shadow: 0 -5px 5px rgba(0,0,0,.1);
-		.gradient(#ffa200,#ffa200,#ff9f02);
+		background: linear-gradient(#ff9f02, #ffa200);
 
 		.teeth{
 			position: absolute;
@@ -185,8 +183,7 @@
 				height: 85%;
 
 				background: #fff;
-				//border-bottom: 2px solid #ffa001;
-				.rounded(50%);
+				border-radius: 50%;
 
 				&:after{
 					content: '';
@@ -199,7 +196,7 @@
 					height: 4px;
 					border: 2px solid #fff;
 					background: #ff9f01;
-					.rounded(50%);
+					border-radius: 50%;
 				}
 			}
 
@@ -211,12 +208,8 @@
 				width: 50%;
 				height: 2px;
 				background: #fff;
-
-				
-
 			}
 		}
-
 	}
 }
 
@@ -242,7 +235,7 @@
 		height: 15.789473684211%;
 		width: 100%;
 
-		.rounded(0 10px 10px 0);
+		border-radius: 0 10px 10px 0;
 
 		.wing{
 			position: absolute;
@@ -253,7 +246,7 @@
 			height: 70%;
 			width: 50%;
 
-			-webkit-transform: rotateZ(55deg) skew(-45deg);
+			transform: rotateZ(55deg) skew(-45deg);
 
 			&:after{
 				content: '';
@@ -266,13 +259,13 @@
 				width: 100%;
 				height: 70%;
 
-				-webkit-transform: rotateZ(-10deg);
+				transform: rotateZ(-10deg);
 			}
 
 			&.bottom{
 				
 				top: 180%;
-				-webkit-transform: rotateZ(-45deg) skew(45deg) translate3d(1px,0px,0);
+				transform: rotateZ(-45deg) skew(45deg) translate3d(1px,0px,0);
 			}
 		}
 	}

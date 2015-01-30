@@ -1,8 +1,7 @@
-@import "elements.less";
 
 .camera{
 
-	.gradient(#898c93,#898c93,#fafcfb);
+	background: linear-gradient(#898c93,#fafcfb);
 
 
 	&:after{

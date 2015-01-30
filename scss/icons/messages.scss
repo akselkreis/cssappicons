@@ -1,8 +1,6 @@
-@import "elements.less";
-
 .messages{
 
-	.gradient(#04d716,#04d716,#92fd73);
+	background: linear-gradient(#04d716,#04d716,#92fd73);
 
 
 	&:after{

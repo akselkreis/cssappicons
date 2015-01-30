@@ -1,0 +1,14 @@
+.header,
+.footer{
+	padding: $padding;
+	width: 100%;
+}
+
+.wrapper{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-around;
+
+
+}

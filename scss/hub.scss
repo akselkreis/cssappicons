@@ -1,18 +1,19 @@
 // Setup
-@include "variables.scss";
-@include "icons.scss";
+@import "variables.scss";
+@import "defaults.scss";
+@import "icons.scss";
 
 // The Icons
-@include "icons/calendar.scss";
-@include "icons/camera.scss";
-@include "icons/clock.scss";
-@include "icons/messages.scss";
-@include "icons/music.scss";
-@include "icons/notes.scss";
-@include "icons/passbook.scss";
-@include "icons/newsstand.scss"; // Dependant on Passbook Styles
-@include "icons/photos.scss";
-@include "icons/weather.scss";
+@import "icons/calendar.scss";
+@import "icons/camera.scss";
+@import "icons/clock.scss";
+@import "icons/messages.scss";
+@import "icons/music.scss";
+@import "icons/notes.scss";
+@import "icons/passbook.scss";
+@import "icons/newsstand.scss"; // Dependant on Passbook Styles
+@import "icons/photos.scss";
+@import "icons/weather.scss";
 
 // Site Layout
-@include "layout.scss";
+@import "layout.scss";

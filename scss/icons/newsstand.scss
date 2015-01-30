@@ -1,8 +1,5 @@
-@import "elements.less";
-
 .newsstand{
-
-background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#fcfdfd), color-stop(80%,#edebec),color-stop(81%,#fcfdfd), color-stop(100%,#fcfdfd)); 
+	background: linear-gradient(#fcfdfd 0%, #edebec 80%, #fcfdfd 81%, #fcfdfd 100%); 
 
 	&:after{
 		content: 'Newsstand';
@@ -26,7 +23,6 @@ background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#fcfdf
 		position: absolute;
 		left: 5.982905982906%;
 		z-index: -2;
-
 		width: 33.333333333333%;
 		height: 45.008547008547%;
 		background: #fdcc00;
@@ -53,7 +49,7 @@ background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#fcfdf
 				top: -120%;
 				right: -65%;
 
-				.rounded(50%);
+				border-radius: 50%;
 			}
 
 			&:after{
@@ -87,7 +83,7 @@ background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#fcfdf
 			width: 40%;
 			height: 20%;
 
-			-webkit-transform: rotateZ(-90deg);
+			transform: rotateZ(-90deg);
 		}
 
 		.tail{
@@ -112,7 +108,7 @@ background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#fcfdf
 
 				background: #70d6f2;
 
-				-webkit-transform: rotateZ(-45deg);
+				transform: rotateZ(-45deg);
 			}
 		}
 	}

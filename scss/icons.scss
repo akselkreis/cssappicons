@@ -1,35 +1,32 @@
+.icon-wrapper{
+	width: 100%;
+	padding: $padding $padding ($padding * 2);
+	flex-basis: ($padding * 2) + $icon-size;
+	transition: .5s ease all;
+}
+
 .icon{
-	position: relative;
-	z-index: 0;
-
-	float: left;
-	width: $iconSize;
-	height: $iconSize;
-	margin: 5% auto 6% 66px;
-
-	
-	background-size: cover;
-	font-size: 200%;
-
 	border-radius: 22.53125%;
-
-	box-shadow: 0, 3px, 10px, rgba(0,0,0,0.2);
+	box-shadow: 0 3px 10px rgba(0,0,0,0.2);
+	font-size: 200%;
+	height: $icon-size;
+	margin: 0 auto;
+	position: relative;
+	width: $icon-size;
+	z-index: 0;
+	transition: .5s ease all;
+	-webkit-user-select: none;
 
 	&:after{
 		text-align: center;
 		position: absolute;
-		bottom: -28%;
+		bottom: -20%;
 		left: 0;
 		width: 100%;
 		color: #fff;
-		font-size: 165%;
-	}
 
-	&:active{
-		opacity: .8;
+		@include font-size(30px);
 	}
-
-	-webkit-user-select: none;
 
 	&.blank{
 		background: none;
@@ -37,6 +34,7 @@
 	}
 
 	&.wip{
+		background-size: cover;
 		background: url(../images/guide.png) no-repeat center;
 	}
 }

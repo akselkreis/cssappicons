@@ -1,5 +1,3 @@
-@import "elements.less";
-
 .notes{
 
 	&:after{
@@ -16,7 +14,7 @@
 		background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#c7c6c4), color-stop(3%,#ffffff), color-stop(100%,#ffffff)); /* Chrome,Safari4+ */
 		background-size: 100% 19.5%;
 		background-position: 0 -20px;
-		.rounded(22.53125%);
+		border-radius: 22.53125%;
 	}
 
 	.header{
@@ -26,7 +24,7 @@
 		box-shadow: 0 3px 5px rgba(0,0,0,.15);
 		position: absolute;
 
-		.gradient(#ffd000, #ffd000, #ffdb44);
+		background: linear-gradient(#ffd000, #ffd000, #ffdb44);
 		
 
 		&:after{

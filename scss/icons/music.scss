@@ -1,13 +1,6 @@
-@import "elements.less";
-
 .music{
 	//.gradient(#ff5e35,#ff5e35,#ff2367);
-	background: -webkit-gradient(linear,
-                               left top,
-                               left bottom,
-                               color-stop(0, rgb(255,41,105)),
-                               color-stop(.5, rgb(255,50,63)),
-                               color-stop(1, rgb(255,93,58)));
+	background: linear-gradient(rgb(255,93,58) 0%, rgb(255,50,63) 50%, rgb(255,41,105) 100%);
 
 
 	&:after{
@@ -24,11 +17,10 @@
 		width: 36.84962406015%;
 		height: 16.541353383459%;
 
-		-webkit-transform: skew(0, -10deg);
-		-moz-transform: skew(0, -10deg);
+
 		transform: skew(0, -10deg);
 
-		.rounded(5px 5px 0 0);
+		border-radius: 5px 5px 0 0;
 
 		.rounder{
 			position: absolute;
@@ -39,7 +31,7 @@
 			height: 20%;
 			width: 88.5%;
 
-			.rounded(5px 5px 0 0);
+			border-radius: 5px 5px 0 0;
 		}
 	}
 
@@ -65,7 +57,7 @@
 			width: 45px;
 			height: 33px;
 
-			.rounded(15px 0 20px 15px);
+			border-radius: 15px 0 20px 15px;
 
 		}
 
@@ -74,12 +66,13 @@
 			left: 68%;
 
 			.reverseCorner{
-				right: 110%;
+				right: 108%;
 				top: 64%;
 
 				&:before{
 					bottom: 0px;
 					right: 0px;
+					background: linear-gradient(#ff3243,#ff2f48);
 				}
 			}
 		}
@@ -87,7 +80,7 @@
 		.reverseCorner{
 			position: absolute;
 			z-index: 1;
-			top: 63%;
+			top: 64%;
 			right: 100%;
 
 			background: #fff;
@@ -101,12 +94,12 @@
 				bottom: 0px;
 				right: 0;
 
-				background: @red;
+				background: $red;
 				width: 25px;
 				height: 25px;
 
-				.gradient(#ff4c44,#ff4c44,#ff4649);
-				.rounded(0 0 8px 0);
+				background: linear-gradient(#ff3047,#ff2e4f);
+				border-radius: 0 0 8px 0;
 
 			}
 

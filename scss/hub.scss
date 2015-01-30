@@ -1,0 +1,18 @@
+// Setup
+@include "variables.scss";
+@include "icons.scss";
+
+// The Icons
+@include "icons/calendar.scss";
+@include "icons/camera.scss";
+@include "icons/clock.scss";
+@include "icons/messages.scss";
+@include "icons/music.scss";
+@include "icons/notes.scss";
+@include "icons/passbook.scss";
+@include "icons/newsstand.scss"; // Dependant on Passbook Styles
+@include "icons/photos.scss";
+@include "icons/weather.scss";
+
+// Site Layout
+@include "layout.scss";

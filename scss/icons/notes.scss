@@ -1,0 +1,53 @@
+@import "elements.less";
+
+.notes{
+
+	&:after{
+		content: 'Notes';
+	}
+
+	.notesWrap{
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		display: block;
+		overflow: hidden;
+		background: #fff;
+		background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#c7c6c4), color-stop(3%,#ffffff), color-stop(100%,#ffffff)); /* Chrome,Safari4+ */
+		background-size: 100% 19.5%;
+		background-position: 0 -20px;
+		.rounded(22.53125%);
+	}
+
+	.header{
+		height: 31.5%;
+		width: 100%;
+		display: block;
+		box-shadow: 0 3px 5px rgba(0,0,0,.15);
+		position: absolute;
+
+		.gradient(#ffd000, #ffd000, #ffdb44);
+		
+
+		&:after{
+			content: '';
+			position: absolute;
+			width: 100%;
+			bottom: -20%;
+			background: transparent;
+			border-bottom: 5px #c7c6c4 dotted;
+
+		}
+
+		&:before{
+			content: '';
+			position: absolute;
+			width: 100%;
+			bottom: -20%;
+			background: transparent;
+			border-bottom: 5px #c7c6c4 dotted;
+
+		}
+
+	}
+}

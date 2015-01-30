@@ -1,0 +1,38 @@
+@import "elements.less";
+
+.photos{
+
+	background: #fff;
+
+
+	&:after{
+		content: 'Photos';
+	}
+
+	div{
+		height: 40%;
+		width: 20%;
+		position: absolute;
+
+		.rounded(40px);
+		background-blend-mode: multiply;
+
+
+
+	}
+
+	.top{
+
+		
+
+		.gradient(#fec42d,#fec42d,#ef8f2a);
+
+
+	}
+
+	.bottom{
+		.gradient(#5fb5e8,#5fb5e8,#8dace0);
+		left: 10%;
+		z-index: 1;
+	}
+}

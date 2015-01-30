@@ -1,0 +1,97 @@
+@import "elements.less";
+
+.weather{
+	.gradient(#1e78f3, #81f3fd, #1e78f3);
+
+	&:after{
+		content: 'Weather';
+
+	}
+
+	.sun{
+		position: absolute;
+		z-index: 1;
+		top: 20%;
+		left: 15%;
+
+		display: block;
+		width: 37.5%;
+		height: 37.5%;
+
+		background: #ffdc00;
+
+		.gradient(#fedf00, #fedf00, #ffbe00);
+		.rounded(50%);
+
+		-webkit-transition: .3s all ease;
+	}
+
+	.clouds{
+		position: absolute;
+		left: 21.875%;
+		top: 31.25%;
+		z-index: 1;
+
+		height: 42.578125%;
+		width: 62.5%;
+
+		display: block;
+		opacity: .8;
+
+		-webkit-transition: .3s all ease;
+
+
+		.cloud{
+			position: absolute;
+			background: #fff;
+
+			display: block;
+
+			.rounded(50%);
+		}
+
+		.small{
+			bottom: 0;
+			left: 0;
+
+			width: 36.875%;
+			height: 54.128440366972%;
+		}
+
+		.medium{
+			top: 0;
+			left: 18.4%;
+
+			width: 58.125%;
+			height: 88.073394495413%;
+		}
+
+		.large{
+			right: 0;
+			bottom: 0;
+
+			width: 50%;
+			height: 73.394495412844%;
+		}
+		.bottom{
+			position: absolute;
+			bottom: 0;
+			left: 20%;
+
+			height: 25%;
+			width: 55%;
+
+			background: #fff;
+		}
+	}
+
+	&:hover{
+		.sun{
+			-webkit-transform: translate3d(-5%, 0,0);
+		}
+
+		.clouds{
+			-webkit-transform: translate3d(5%, 0,0);
+		}
+	}
+}

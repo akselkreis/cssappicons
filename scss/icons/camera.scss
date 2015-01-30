@@ -1,0 +1,11 @@
+@import "elements.less";
+
+.camera{
+
+	.gradient(#898c93,#898c93,#fafcfb);
+
+
+	&:after{
+		content: 'Camera';
+	}
+}

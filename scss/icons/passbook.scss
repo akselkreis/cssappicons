@@ -1,0 +1,292 @@
+@import "elements.less";
+
+.passbook{
+
+	.passbookWrap{
+		overflow: hidden;
+		position: absolute;
+		width: 100%;
+		height: 100%;
+
+		.rounded(22.53125%);
+	}
+
+	&:after{
+		content: 'Passbook';
+	}
+
+	.travel{
+		width: 100%;
+		height: 41.025641025641%;
+
+		.gradient(#4a9acb,#4a9acb,#58bbfa);
+	}
+
+	.movies{
+		position: relative;
+
+		width: 100%;
+		height: 38.461538461538%;
+		margin-top: -9.8%;
+
+		.box-shadow(0 -5px 5px rgba(0,0,0,.1));
+		.gradient(#2bb603,#2bb603,#45d100);
+
+		&:before{
+			content: '';
+			position: absolute;
+			top: -35%;
+			left: 37.5%;
+
+			display: block;
+			background: #50a7de;
+			width: 25%;
+			height: 65%;
+
+			.gradient(#4a9acb,#4a9acb,#52ade6);
+			.inner-shadow(0, -5px, 2px, 0.1);
+			.rounded(50%);
+
+		}
+
+		.projector{
+			top: 17%;
+
+
+			-webkit-transform: scale(.9,.9);
+		}
+
+		.projectorBody{
+			position: absolute;
+			top: 100%;
+			left: 6%;
+
+			background: #fff;
+			width: 70%;
+			height: 50%;
+			.rounded(1px);
+
+			&:before, &:after{
+				content: '';
+				
+				position: absolute;
+				top: -115%;
+				left: -19%;
+
+				background: #3cc801;
+				border: 4px solid #fff;
+
+				display: block;
+				width: 7px;
+				height: 7px;
+
+				.rounded(50%);
+			}
+
+			&:after{
+				left: auto;
+				right: -19%;
+			}
+
+			
+		}
+
+		.lens{
+
+				position: absolute;
+
+				right: -9%;
+				top: 92%;
+				
+				display: block;
+				height: 0;
+				width: 0;
+				border: 10px solid transparent;
+				border-right-color: #fff;
+
+				-webkit-transform: scale(.9);
+			}
+	}
+
+	.dining{
+		position: relative;
+		z-index: 2;
+		width: 100%;
+		height: 38.461538461538%;
+
+		box-shadow: 0 -5px 5px rgba(0,0,0,.1);
+		.gradient(#ffa200,#ffa200,#ff9f02);
+
+		.teeth{
+			position: absolute;
+			top: -13px;
+			left: -6px;
+
+			width: 0;
+			height: 0;
+			display: block;
+
+			border: 8px solid transparent;
+			border-bottom-color: #ff9f02;
+
+			&:before, &:after{
+				content: '';
+				position: absolute;
+				top: -8px;
+				left: 6px;
+
+				width: 0;
+				height: 0;
+				display: block;
+
+				border: 8px solid transparent;
+				border-bottom-color: #ff9f02;
+			}
+
+			&:after{
+				top: -8px;
+				left: 20px;
+			}
+			
+			&.t1{
+				left: 35px;
+			}
+
+			&.t2{
+				left: 78px;
+			}
+
+			&.t3{
+				left: 120px;
+			}
+
+			&.t4{
+				left: 162px;
+			}
+			&.t5{
+				left: 204px;
+			}
+			&.t6{
+				left: 246px;
+			}
+		}
+
+		.teacup{
+			overflow: hidden;
+			top: 25%;
+
+			.cup{
+				position: absolute;
+				top: -35%;
+				right: 0;
+				z-index: 1;
+
+				width: 85%;
+				height: 85%;
+
+				background: #fff;
+				//border-bottom: 2px solid #ffa001;
+				.rounded(50%);
+
+				&:after{
+					content: '';
+
+					position: absolute;
+					top: 40%;
+					left: -15%;
+
+					width: 4px;
+					height: 4px;
+					border: 2px solid #fff;
+					background: #ff9f01;
+					.rounded(50%);
+				}
+			}
+
+			.base{
+				position: absolute;
+				z-index: 0;
+				top: 52%;
+				left: 33%;
+				width: 50%;
+				height: 2px;
+				background: #fff;
+
+				
+
+			}
+		}
+
+	}
+}
+
+
+.pbIcon{
+	position: absolute;
+	top: 11%;
+	left: 10%;
+
+	width: 13%;
+	height: 0;
+	padding: 12% 0 0;
+}
+
+.plane{
+
+	.body{
+		position: absolute;
+		top: 42%;
+		left: 0;
+
+		background: #fff;
+		height: 15.789473684211%;
+		width: 100%;
+
+		.rounded(0 10px 10px 0);
+
+		.wing{
+			position: absolute;
+			top: -130%;
+			left: 14%;
+			background: #fff;
+			display: block;
+			height: 70%;
+			width: 50%;
+
+			-webkit-transform: rotateZ(55deg) skew(-45deg);
+
+			&:after{
+				content: '';
+
+				position: absolute;
+				top: -40%;
+				left: 0%;
+				display: block;
+				background: #fff;
+				width: 100%;
+				height: 70%;
+
+				-webkit-transform: rotateZ(-10deg);
+			}
+
+			&.bottom{
+				
+				top: 180%;
+				-webkit-transform: rotateZ(-45deg) skew(45deg) translate3d(1px,0px,0);
+			}
+		}
+	}
+
+	.tail{
+			position: absolute;
+			left: 0;
+			top: 25%;
+
+
+			height: 0;
+			width: 0;
+			border: 7px solid transparent;
+			border-left-color: #fff;
+			border-left-width: 8px;
+		}
+}

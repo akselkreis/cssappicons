@@ -1,0 +1,90 @@
+@import "elements.less";
+
+.calendar{
+	background: #fff;
+
+
+	&:after{
+		content: 'Calendar';
+	}
+
+	.month{
+		text-align: center;
+		overflow: hidden;
+			
+		height: 17%;
+		margin: 13% 0 0;
+
+		color: @red;
+		
+		p{
+			margin: 0;
+			line-height: 1;
+			font-size: 125%;
+			letter-spacing: -2px;
+		}
+
+		.inner{
+
+		}
+	}
+
+	.day{
+		width: 100%;
+		margin: 0 auto;
+
+
+		p{
+			color: black;
+			text-align: center;
+			font-size: 525%;
+			line-height: 0;
+			font-family: 'HelveticaNeue-UltraLight', Helvetica, sans-serif;
+			letter-spacing: -25px;
+			text-indent: -16%;
+			margin: 29% 0 0 0;
+		}
+	}
+
+	.one{
+		position: absolute;
+		top: 38%;
+		left: 23%;
+		//background: rgba(0,0,0,.2);
+		overflow: hidden;
+		display: block;
+		width: 12%;
+		height: 44.5%;
+		border-right: 3px solid #000;
+
+		&:after{
+			content: '';
+
+			position: absolute;
+			top: -30%;
+			left: -90%;
+
+			width: 250%;
+			height: 35%;
+
+			display: block;
+			border: 3px solid #000;
+
+			-webkit-transform: rotateZ(-51deg);
+			.rounded(50%);
+		}
+	}
+
+	.zero{
+		position: absolute;
+		top: 37%;
+		left: 43%;
+		overflow: hidden;
+		display: block;
+		width: 32%;
+		height: 44%;
+		border: 3px solid #000;
+
+		.rounded(47%);
+	}
+}

@@ -289,64 +289,83 @@ a:hover {
 }
 
 .clock .hourHand {
-	height: 2%;
+	height: 5px;
 	width: 35%;
 	position: absolute;
-	top: 49%;
-	left: 51%;
+	top: 50%;
+	left: 50%;
+	-webkit-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
 	background: black;
 	border-radius: 0 5% 5% 0;
 	-webkit-animation: sweepDay 86400s infinite;
+	animation: sweepDay 86400s infinite;
 	-webkit-animation-timing-function: linear;
+	animation-timing-function: linear;
 	-webkit-transform-origin: 0 50%;
+	transform-origin: 0 50%;
 }
 
 .clock .minuteHand {
-	height: 2%;
+	height: 5px;
 	width: 21%;
 	position: absolute;
-	top: 49%;
+	top: 50%;
 	left: 50%;
+	-webkit-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
 	background: black;
-	border-radius: 0 5% 5% 0;
 	-webkit-animation: sweep 3600s infinite;
+	animation: sweep 3600s infinite;
 	-webkit-animation-timing-function: linear;
+	animation-timing-function: linear;
 	-webkit-transform-origin: 0 50%;
+	transform-origin: 0 50%;
 }
 
 .clock .sweep {
-	height: 1%;
+	height: 2px;
 	width: 30%;
 	position: absolute;
 	top: 50%;
-	left: 51%;
+	left: 50%;
+	-webkit-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
 	background: #d62338;
 	z-index: 1;
 	-webkit-animation: sweep 60s infinite;
+	animation: sweep 60s infinite;
 	-webkit-animation-timing-function: linear;
+	animation-timing-function: linear;
 	-webkit-transform: rotateZ(-105deg);
+	transform: rotateZ(-105deg);
 	-webkit-transform-origin: 0 50%;
+	transform-origin: 0 50%;
 }
 
 .clock .sweepCover {
 	position: absolute;
 	display: block;
-	top: 48.1%;
-	left: 49.25%;
+	top: 50%;
+	left: 50%;
+	-webkit-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
 	background: #d62338;
-	width: 4%;
-	height: 4%;
+	width: 9px;
+	height: 9px;
 	z-index: 1;
 	border-radius: 50%;
 }
 
 .clock .center {
 	position: absolute;
-	top: 47%;
-	left: 48%;
+	top: 50%;
+	left: 50%;
+	-webkit-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
 	background: black;
-	width: 6%;
-	height: 6%;
+	width: 14px;
+	height: 14px;
 	border-radius: 50%;
 }
 
@@ -1047,10 +1066,26 @@ h1 {
 
 0% {
 	-webkit-transform: rotateZ(0deg);
+	transform: rotateZ(0deg);
 }
 
 100% {
 	-webkit-transform: rotateZ(359deg);
+	transform: rotateZ(359deg);
+}
+
+}
+
+@keyframes sweep {
+
+0% {
+	-webkit-transform: rotateZ(0deg);
+	transform: rotateZ(0deg);
+}
+
+100% {
+	-webkit-transform: rotateZ(359deg);
+	transform: rotateZ(359deg);
 }
 
 }
@@ -1059,10 +1094,26 @@ h1 {
 
 0% {
 	-webkit-transform: rotateZ(-105deg);
+	transform: rotateZ(-105deg);
 }
 
 100% {
 	-webkit-transform: rotateZ(-104deg);
+	transform: rotateZ(-104deg);
+}
+
+}
+
+@keyframes sweepDay {
+
+0% {
+	-webkit-transform: rotateZ(-105deg);
+	transform: rotateZ(-105deg);
+}
+
+100% {
+	-webkit-transform: rotateZ(-104deg);
+	transform: rotateZ(-104deg);
 }
 
 }

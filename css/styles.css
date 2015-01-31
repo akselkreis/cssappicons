@@ -163,7 +163,7 @@ a:hover {
 }
 
 .camera {
-  background: linear-gradient(#d4d5d6, #76797f);
+  background: linear-gradient(to bottom, #d4d5d6, #76797f 100%);
 }
 .camera .camera-nub,
 .camera .camera-top,

@@ -1,7 +1,67 @@
 .messages{
+	background: linear-gradient(rgba(105,255,103,1),rgba(40,168,0,1));
+	// background: url("../../../images/messages.png") no-repeat center;
+	// background-size: cover;
 
-	background: linear-gradient(#04d716,#04d716,#92fd73);
+	.bubble{
+		position: absolute;
+		top: 17%;
+		left:13%; 
+		right: 13%;
+		bottom: 21.5%;
+		border-radius: 50%;
+		background: $white;
 
+	}
+
+	.triangle{
+		position: absolute;
+		width: 70px;
+		height: 24px;
+		bottom: 0px;
+		left: 25px;
+		border-radius: 50%;
+		background: $white;
+		transform: rotate(-34deg);
+
+		&:before{
+			content:'';
+			width: 30px;
+			height: 13px;
+			border-radius: 50%;
+			background: yellow;
+			position: absolute;
+			display: block;
+			top: 0;
+			left: -8px;
+			transform: rotate(-20deg);
+			background: linear-gradient(rgba(56,189,25,1),rgba(51,183,17,1));
+		}
+
+
+	}
+
+	.reverse-corner{
+		position: absolute;
+		background: $white;
+		width: 7px;
+		height: 7px;
+		bottom: -5px;
+		left: 66px;
+		transform: rotate(23deg);
+
+		&:after{
+			content:'';
+			width: 9px;
+			height: 9px;
+			border-radius: 50% 0 0 0;
+			position: absolute;
+			display: block;
+			top: -1px;
+			left: -1px;
+			background: linear-gradient(rgba(56,189,25,1),rgba(51,183,17,1));
+		}
+	}
 
 	&:after{
 		content: 'Messages';

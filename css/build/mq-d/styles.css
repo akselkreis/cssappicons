@@ -35,9 +35,10 @@ a:hover {
 .icon-wrapper {
 	width: 100%;
 	padding: 16px 16px 64px;
-	-webkit-flex-basis: 320px;
-	flex-basis: 320px;
+	-webkit-flex-basis: 160px;
+	flex-basis: 160px;
 	transition: .5s ease all;
+	height: 176px;
 }
 
 .icon {
@@ -51,6 +52,10 @@ a:hover {
 	z-index: 0;
 	transition: .5s ease all;
 	-webkit-user-select: none;
+	-webkit-transform: scale(0.5);
+	transform: scale(0.5);
+	-webkit-transform-origin: 0 0;
+	transform-origin: 0 0;
 }
 
 .icon:after {
@@ -1202,7 +1207,6 @@ a:hover {
 	display: inline-block;
 	width: 40px;
 	padding: 0;
-	margin: 0 5px;
 	background: white;
 	border-radius: 22.53125%;
 	text-align: center;
@@ -1227,19 +1231,23 @@ a:hover {
 	font-family: 'HelveticaNeue-Bold', Helvetica, sans-serif;
 }
 
-@media screen and (min-width: 320px) {
-
-.icon-wrapper {
-	padding: 32px 32px 64px;
-}
-
-}
-
 @media screen and (min-width: 640px) {
 
 h1 {
 	font-size: 40px;
 	font-size: 2rem;
+}
+
+.icon-wrapper {
+	padding: 32px 32px 64px;
+	-webkit-flex-basis: 320px;
+	flex-basis: 320px;
+	height: auto;
+}
+
+.icon {
+	-webkit-transform: scale(1);
+	transform: scale(1);
 }
 
 .header,
@@ -1249,7 +1257,6 @@ h1 {
 
 .logo span {
 	width: 90px;
-	margin: 0 10px;
 }
 
 .logo span.new:after {

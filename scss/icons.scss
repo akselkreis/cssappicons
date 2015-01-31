@@ -1,11 +1,19 @@
 .icon-wrapper{
 	width: 100%;
 	padding: ($padding / 2) ($padding / 2) ($padding * 2);
-	flex-basis: ($padding * 2) + $icon-size;
+	flex-basis: 160px;
 	transition: .5s ease all;
+	height: 176px;
 
 	@media screen and (min-width: 320px){
+		
+		
+	}
+
+	@media screen and (min-width: #{$grid-width}){
 		padding: $padding $padding ($padding * 2);
+		flex-basis: ($padding * 2) + $icon-size;
+		height: auto;
 	}
 }
 
@@ -20,6 +28,12 @@
 	z-index: 0;
 	transition: .5s ease all;
 	-webkit-user-select: none;
+	transform: scale(.5);
+	transform-origin: 0 0;
+
+	@media screen and (min-width: #{$grid-width}){
+		transform: scale(1);
+	}
 
 	&:after{
 		text-align: center;

@@ -38,7 +38,6 @@
 		display: inline-block;
 		width: 40px;
 		padding: 0;
-		margin: 0 5px;
 		background: white;
 		border-radius: $icon-radius;
 		text-align: center;
@@ -46,7 +45,6 @@
 
 		@media screen and (min-width: $grid-width){
 			width: 90px;
-			margin: 0 10px;
 		}
 
 		&.new{

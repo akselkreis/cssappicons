@@ -1,3 +1,4 @@
 *.sublime-project
 node_modules
 .sass-cache
+.sass-cache/*

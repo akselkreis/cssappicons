@@ -1,7 +1,20 @@
 .header,
 .footer{
-	padding: $padding;
+	padding: ($padding / 2);
 	width: 100%;
+
+	@media screen and (min-width: $grid-width){
+		padding: $padding;
+	}
+}
+
+.header{
+	background: $black;
+	color: $white;
+}
+
+.footer{
+	text-align: center;
 }
 
 .wrapper{
@@ -9,6 +22,64 @@
 	flex-direction: row;
 	flex-wrap: wrap;
 	justify-content: space-around;
+}
 
+.logo{
+	position: relative;
+	vertical-align: middle;
+	z-index: 1;
+	//text-align: center;
+	line-height: 40px;
+	
+	span{
+		font-weight: normal;
+		font-family: 'HelveticaNeue-Light', Helvetica, sans-serif;
+		color: black;
+		display: inline-block;
+		width: 40px;
+		padding: 0;
+		margin: 0 5px;
+		background: white;
+		border-radius: $icon-radius;
+		text-align: center;
+		position: relative;
 
+		@media screen and (min-width: $grid-width){
+			width: 90px;
+			margin: 0 10px;
+		}
+
+		&.new{
+			&:after{
+				content: '2';
+				width: 15px;
+				height: 15px;
+				line-height: 15px;
+				background: red;
+				top: -5px;
+				right: -5px;
+				display: block;
+				color: $white;
+				position: absolute;
+				border-radius: 50%;
+				@include font-size(10px);
+				text-align: center;
+				font-family: 'HelveticaNeue-Bold', Helvetica, sans-serif;
+
+				@media screen and (min-width: $grid-width){
+					width: 35px;
+				height: 35px;
+				line-height: 35px;
+				font-size: 20px;
+				top: -12px;
+				right: -12px;
+		}
+			}
+		}
+	}
+
+	@media screen and (min-width: $grid-width){
+			line-height: 90px;
+		}
+	
 }

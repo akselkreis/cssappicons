@@ -8,10 +8,9 @@ html{
 }
 
 body{
-	background: gray;
-	color: $white;
+	background: #cfd1d0;
+	color: $black;
 	font-family: 'HelveticaNeue-Light', Helvetica, sans-serif;
-	text-align: center;
 	margin: 0;
 	padding: 0;
 }
@@ -21,17 +20,13 @@ h1{
 	margin: 0;
 	font-weight: normal;
 	font-family: 'HelveticaNeue-Bold', Helvetica, sans-serif;
-	@include font-size(40px); 
+	@include font-size(20px); 
 
 	@media screen and (min-width: $grid-width){
-		@include font-size(60px); 
+		@include font-size(40px); 
 	}
 
-	span{
-		font-weight: normal;
-		font-family: 'HelveticaNeue-Light', Helvetica, sans-serif;
-
-	}
+	
 }
 
 a{

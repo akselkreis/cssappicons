@@ -1,12 +1,16 @@
 .icon-wrapper{
 	width: 100%;
-	padding: $padding $padding ($padding * 2);
+	padding: ($padding / 2) ($padding / 2) ($padding * 2);
 	flex-basis: ($padding * 2) + $icon-size;
 	transition: .5s ease all;
+
+	@media screen and (min-width: 320px){
+		padding: $padding $padding ($padding * 2);
+	}
 }
 
 .icon{
-	border-radius: 22.53125%;
+	border-radius: $icon-radius;
 	box-shadow: 0 3px 10px rgba(0,0,0,0.2);
 	font-size: 200%;
 	height: $icon-size;
@@ -23,7 +27,7 @@
 		bottom: -20%;
 		left: 0;
 		width: 100%;
-		color: #fff;
+		color: $black;
 
 		@include font-size(30px);
 	}

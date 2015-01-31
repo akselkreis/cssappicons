@@ -44,6 +44,7 @@ a:hover {
 @media screen and (max-width: 639px) {
   .icon-wrapper {
     -webkit-flex-basis: 160px;
+        -ms-flex-preferred-size: 160px;
             flex-basis: 160px;
     height: 176px;
   }
@@ -52,6 +53,7 @@ a:hover {
   .icon-wrapper {
     padding: 32px 32px 64px;
     -webkit-flex-basis: 320px;
+        -ms-flex-preferred-size: 320px;
             flex-basis: 320px;
     height: auto;
   }
@@ -68,13 +70,16 @@ a:hover {
   z-index: 0;
   -webkit-user-select: none;
   -webkit-transform: scale(0.5);
+      -ms-transform: scale(0.5);
           transform: scale(0.5);
   -webkit-transform-origin: 0 0;
+      -ms-transform-origin: 0 0;
           transform-origin: 0 0;
 }
 @media screen and (min-width: 640px) {
   .icon {
     -webkit-transform: scale(1);
+        -ms-transform: scale(1);
             transform: scale(1);
   }
 }
@@ -211,6 +216,7 @@ a:hover {
   background: linear-gradient(-190deg, #c2c3c5, #babcbe);
   border-radius: 100% 0 100% 100%;
   -webkit-transform: rotate(33deg);
+      -ms-transform: rotate(33deg);
           transform: rotate(33deg);
   box-shadow: 5px 1px 1px rgba(0, 0, 0, 0.1);
 }
@@ -247,6 +253,7 @@ a:hover {
   background: linear-gradient(190deg, #c2c3c5, #babcbe);
   border-radius: 0 100% 100% 100%;
   -webkit-transform: rotate(-33deg);
+      -ms-transform: rotate(-33deg);
           transform: rotate(-33deg);
   box-shadow: -5px 1px 1px rgba(0, 0, 0, 0.1);
 }
@@ -270,6 +277,7 @@ a:hover {
   top: 50%;
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
   border-radius: 50%;
   box-shadow: 0 2px 3px rgba(0, 0, 0, 0.6), inset 0 2px 3px rgba(0, 0, 0, 0.6);
@@ -447,6 +455,7 @@ a:hover {
   top: 50%;
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
   background: black;
   border-radius: 0 5% 5% 0;
@@ -455,6 +464,7 @@ a:hover {
   -webkit-animation-timing-function: linear;
           animation-timing-function: linear;
   -webkit-transform-origin: 0 50%;
+      -ms-transform-origin: 0 50%;
           transform-origin: 0 50%;
 }
 .clock .minuteHand {
@@ -464,6 +474,7 @@ a:hover {
   top: 50%;
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
   background: black;
   -webkit-animation: sweep 3600s infinite;
@@ -471,6 +482,7 @@ a:hover {
   -webkit-animation-timing-function: linear;
           animation-timing-function: linear;
   -webkit-transform-origin: 0 50%;
+      -ms-transform-origin: 0 50%;
           transform-origin: 0 50%;
 }
 .clock .sweep {
@@ -480,6 +492,7 @@ a:hover {
   top: 50%;
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
   background: #d62338;
   z-index: 1;
@@ -490,6 +503,7 @@ a:hover {
   -webkit-transform: rotateZ(-105deg);
           transform: rotateZ(-105deg);
   -webkit-transform-origin: 0 50%;
+      -ms-transform-origin: 0 50%;
           transform-origin: 0 50%;
 }
 .clock .sweepCover {
@@ -498,6 +512,7 @@ a:hover {
   top: 50%;
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
   background: #d62338;
   width: 9px;
@@ -510,6 +525,7 @@ a:hover {
   top: 50%;
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
   background: black;
   width: 14px;
@@ -538,6 +554,7 @@ a:hover {
   border-radius: 50%;
   background: #fff;
   -webkit-transform: rotate(-34deg);
+      -ms-transform: rotate(-34deg);
           transform: rotate(-34deg);
 }
 .messages .triangle:before {
@@ -551,6 +568,7 @@ a:hover {
   top: 0;
   left: -8px;
   -webkit-transform: rotate(-20deg);
+      -ms-transform: rotate(-20deg);
           transform: rotate(-20deg);
   background: linear-gradient(#38bd19, #33b711);
 }
@@ -562,6 +580,7 @@ a:hover {
   bottom: -5px;
   left: 66px;
   -webkit-transform: rotate(23deg);
+      -ms-transform: rotate(23deg);
           transform: rotate(23deg);
 }
 .messages .reverse-corner:after {
@@ -593,6 +612,7 @@ a:hover {
   width: 36.84962406015%;
   height: 16.541353383459%;
   -webkit-transform: skew(0, -10deg);
+      -ms-transform: skew(0, -10deg);
           transform: skew(0, -10deg);
   border-radius: 5px 5px 0 0;
 }
@@ -735,6 +755,7 @@ a:hover {
 .passbook .movies .projector {
   top: 17%;
   -webkit-transform: scale(0.9, 0.9);
+      -ms-transform: scale(0.9, 0.9);
           transform: scale(0.9, 0.9);
 }
 .passbook .movies .projectorBody {
@@ -772,6 +793,7 @@ a:hover {
   border: 10px solid transparent;
   border-right-color: #fff;
   -webkit-transform: scale(0.9);
+      -ms-transform: scale(0.9);
           transform: scale(0.9);
 }
 .passbook .dining {
@@ -1134,12 +1156,16 @@ a:hover {
 
 .wrapper {
   display: -webkit-flex;
+  display: -ms-flexbox;
   display: flex;
   -webkit-flex-direction: row;
+      -ms-flex-direction: row;
           flex-direction: row;
   -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
           flex-wrap: wrap;
   -webkit-justify-content: space-around;
+      -ms-flex-pack: distribute;
           justify-content: space-around;
 }
 

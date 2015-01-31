@@ -35,10 +35,6 @@ a:hover {
 .icon-wrapper {
 	width: 100%;
 	padding: 16px 16px 64px;
-	-webkit-flex-basis: 160px;
-	flex-basis: 160px;
-	transition: .5s ease all;
-	height: 176px;
 }
 
 .icon {
@@ -50,7 +46,6 @@ a:hover {
 	position: relative;
 	width: 256px;
 	z-index: 0;
-	transition: .5s ease all;
 	-webkit-user-select: none;
 	-webkit-transform: scale(0.5);
 	transform: scale(0.5);
@@ -1270,6 +1265,16 @@ h1 {
 
 .logo {
 	line-height: 90px;
+}
+
+}
+
+@media screen and (max-width: 639px) {
+
+.icon-wrapper {
+	-webkit-flex-basis: 160px;
+	flex-basis: 160px;
+	height: 176px;
 }
 
 }

@@ -40,9 +40,12 @@ a:hover {
 .icon-wrapper {
   width: 100%;
   padding: 16px 16px 64px;
-  flex-basis: 160px;
-  transition: .5s ease all;
-  height: 176px;
+}
+@media screen and (max-width: 639px) {
+  .icon-wrapper {
+    flex-basis: 160px;
+    height: 176px;
+  }
 }
 @media screen and (min-width: 640px) {
   .icon-wrapper {
@@ -61,7 +64,6 @@ a:hover {
   position: relative;
   width: 256px;
   z-index: 0;
-  transition: .5s ease all;
   -webkit-user-select: none;
   transform: scale(0.5);
   transform-origin: 0 0;

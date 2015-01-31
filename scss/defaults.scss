@@ -20,6 +20,7 @@ body{
 h1{
 	margin: 0;
 	font-weight: bold;
+	font-family: 'HelveticaNeue-Bold', Helvetica, sans-serif;
 	@include font-size(40px); 
 
 	@media screen and (min-width: $grid-width){
@@ -28,7 +29,7 @@ h1{
 
 	span{
 		font-weight: normal;
-
+		font-family: 'HelveticaNeue-Light', Helvetica, sans-serif;
 
 	}
 }

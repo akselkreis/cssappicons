@@ -1,6 +1,6 @@
 
 .weather{
-	background: linear-gradient(#1e78f3, #81f3fd);
+	background: linear-gradient(rgba(22,75,240,1), rgba(48,205,254,1));
 
 	&:after{
 		content: 'Weather';
@@ -19,7 +19,7 @@
 
 		background: #ffdc00;
 
-		background: linear-gradient(#ffbe00, #fedf00);
+		background: linear-gradient(rgba(250,178,0,1), rgba(254,223,0,1));
 		border-radius: 50%;
 
 		transition: .3s all ease;
@@ -35,7 +35,7 @@
 		width: 62.5%;
 
 		display: block;
-		opacity: .8;
+		opacity: .9;
 
 		transition: .3s all ease;
 

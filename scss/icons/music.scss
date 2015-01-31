@@ -1,6 +1,6 @@
 .music{
 	//.gradient(#ff5e35,#ff5e35,#ff2367);
-	background: linear-gradient(rgb(255,93,58) 0%, rgb(255,50,63) 50%, rgb(255,41,105) 100%);
+	background: linear-gradient(rgba(247,64,42,1) 0%, rgba(246,37,54,1) 50%, rgba(199,5,66,1) 100%);
 
 
 	&:after{
@@ -26,7 +26,7 @@
 			position: absolute;
 			top: 90%;
 			left: 6%;
-			background: #ff3756;
+			background: rgba(246,44,51,1);
 
 			height: 20%;
 			width: 88.5%;
@@ -66,13 +66,13 @@
 			left: 68%;
 
 			.reverseCorner{
-				right: 108%;
+				right: 100%;
 				top: 64%;
 
 				&:before{
 					bottom: 0px;
 					right: 0px;
-					background: linear-gradient(#ff3243,#ff2f48);
+					background: linear-gradient(rgba(243,35,54,1),rgba(234,29,57,1));
 				}
 			}
 		}
@@ -98,7 +98,7 @@
 				width: 25px;
 				height: 25px;
 
-				background: linear-gradient(#ff3047,#ff2e4f);
+				background: linear-gradient(rgba(236,31,57,1),rgba(227,24,58,1));
 				border-radius: 0 0 8px 0;
 
 			}

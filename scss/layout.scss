@@ -22,6 +22,10 @@
 	flex-direction: row;
 	flex-wrap: wrap;
 	justify-content: space-around;
+
+	// @media screen and (min-width: #{$grid-width}){
+	// 	padding: ($padding / 2);
+	// }
 }
 
 .logo{
@@ -48,7 +52,7 @@
 
 		&.new{
 			&:after{
-				content: '2';
+				content: '3';
 				width: 15px;
 				height: 15px;
 				line-height: 15px;

@@ -39,12 +39,13 @@ a:hover {
 
 .icon-wrapper {
   width: 100%;
-  padding: 16px 16px 64px;
+  padding: 16px;
+  overflow: hidden;
 }
 @media screen and (max-width: 639px) {
   .icon-wrapper {
     flex-basis: 160px;
-    height: 176px;
+    height: 192px;
   }
 }
 @media screen and (min-width: 640px) {

@@ -1,11 +1,11 @@
 .icon-wrapper{
 	width: 100%;
-	padding: ($padding / 2) ($padding / 2) ($padding * 2);
-	
+	padding: ($padding / 2);
+	overflow: hidden;
 
 	@media screen and (max-width: #{($grid-width - 1)}){
 		flex-basis: 160px;
-		height: 176px;
+		height: 192px;
 		
 	}
 

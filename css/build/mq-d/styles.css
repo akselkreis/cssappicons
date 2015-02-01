@@ -34,7 +34,8 @@ a:hover {
 
 .icon-wrapper {
 	width: 100%;
-	padding: 16px 16px 64px;
+	padding: 16px;
+	overflow: hidden;
 }
 
 .icon {
@@ -1410,7 +1411,7 @@ h1 {
 	-webkit-flex-basis: 160px;
 	-ms-flex-preferred-size: 160px;
 	flex-basis: 160px;
-	height: 176px;
+	height: 192px;
 }
 
 }

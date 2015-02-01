@@ -1091,14 +1091,14 @@ a:hover {
   position: relative;
   vertical-align: middle;
   z-index: 1;
-  line-height: 40px;
+  line-height: 45px;
 }
 .logo span {
   font-weight: normal;
   font-family: 'HelveticaNeue-Light', Helvetica, sans-serif;
   color: black;
   display: inline-block;
-  width: 40px;
+  width: 45px;
   padding: 0;
   background: white;
   border-radius: 22.53125%;
@@ -1115,7 +1115,7 @@ a:hover {
   width: 15px;
   height: 15px;
   line-height: 15px;
-  background: red;
+  background: #f60000;
   top: -5px;
   right: -5px;
   display: block;

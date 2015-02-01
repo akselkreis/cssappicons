@@ -17,7 +17,7 @@ module.exports = function(grunt) {
 		
 		autoprefixer: {
 			options: {
-				browsers: ['> 1%']
+				browsers: ['> 0%']
 			},
 			multiple_files: {
 				expand: true,

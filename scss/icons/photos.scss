@@ -21,7 +21,7 @@
 
 
 	.top{
-		background: linear-gradient(rgba(226,101,0,1) 0,rgba(249,213,0,1) 60%);
+		background: linear-gradient(#e56500 0%, #f9b000 50%, #e6bf00 100%);
 		left: 50%;
 		top: 7%;
 		transform: translate(-50%,0);
@@ -30,7 +30,7 @@
 	}
 
 	.bottom{
-		background: linear-gradient(rgba(82,152,214,1) 50%,rgba(105,132,201,1) 100%);
+		background: linear-gradient(to top, #4f97d3 0, #6782c6 50%, #5d5fa7 100%);
 		z-index: 1;
 		left: 50%;
 		bottom: 7%;
@@ -39,7 +39,7 @@
 	}
 
 	.left{
-		background: linear-gradient(to left, rgba(167,82,157,1) 0,rgba(196,71,110,1) 50%);
+		background: linear-gradient(to right, #b969ab 0, #da6784 50%, #c72943 100%);
 		left: 7%;
 		top: 50%;
 		transform: translate(0,-50%);
@@ -50,7 +50,7 @@
 	}
 
 	.right{
-		background: linear-gradient(to right, rgba(128,187,56,1) 50%,rgba(177,205,7,1) 100%);
+		background: linear-gradient(to left, #adc900 0, #82be3d 50%, #44912a 100%);
 		z-index: 1;
 		right: 7%;
 		top: 50%;
@@ -66,20 +66,20 @@
 		height: 100%;
 		
 
-		.top{
-			background: linear-gradient(rgba(218,50,68,1) 0, rgba(228,100,0,1) 60%);
+		.top{ // Top Left
+			background: linear-gradient(#e74c55 0, #e05d34 50%, #e25800 100%);
 		}
 
-		.bottom{
-			background: linear-gradient(rgba(89,173,91,1) 0, rgba(69,144,211,1) 100%);
+		.bottom{ // Bottom Right
+			background: linear-gradient(to top, #58ab59 0, #63b2b5 50%, #3e86c7 100%);
 		}
 
-		.left{
-			background: linear-gradient(to left, rgba(110,99,173,1) 0%, rgba(175,96,156,1) 100%);
+		.left{ // Bottom Left
+			background: linear-gradient(to left, #6e65af 0%, #966bb1 50%, #8e5399 100%);
 		}
 
-		.right{
-			background: linear-gradient(to right, rgba(249,213,0,1) 0, rgba(221,219,0,1) 60%);
+		.right{ // Top Right
+			background: linear-gradient(to left, #f9d500 0, #d1d500 50%, #a7c400 100%);
 		}
 	}
 }

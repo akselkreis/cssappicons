@@ -22,6 +22,9 @@
 	flex-direction: row;
 	flex-wrap: wrap;
 	justify-content: space-around;
+	max-width: 1600px;
+	margin: 0 auto;
+	padding: ($padding / 2) 0;
 
 	// @media screen and (min-width: #{$grid-width}){
 	// 	padding: ($padding / 2);
@@ -33,6 +36,7 @@
 	vertical-align: middle;
 	z-index: 1;
 	line-height: 45px;
+	text-align: center;
 	
 	span{
 		font-weight: normal;

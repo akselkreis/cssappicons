@@ -291,7 +291,7 @@ a:hover {
   background: black;
 }
 .clock:after {
-  content: 'Clock';
+  content: 'Clock (iOS7)';
 }
 .clock .face {
   position: relative;
@@ -983,14 +983,14 @@ a:hover {
   mix-blend-mode: multiply;
 }
 .photos .top {
-  background: linear-gradient(#e26500 0, #f9d500 60%);
+  background: linear-gradient(#e56500 0%, #f9b000 50%, #e6bf00 100%);
   left: 50%;
   top: 7%;
   transform: translate(-50%, 0);
   z-index: 1;
 }
 .photos .bottom {
-  background: linear-gradient(#5298d6 50%, #6984c9 100%);
+  background: linear-gradient(to top, #4f97d3 0, #6782c6 50%, #5d5fa7 100%);
   z-index: 1;
   left: 50%;
   bottom: 7%;
@@ -998,7 +998,7 @@ a:hover {
   z-index: 5;
 }
 .photos .left {
-  background: linear-gradient(to left, #a7529d 0, #c4476e 50%);
+  background: linear-gradient(to right, #b969ab 0, #da6784 50%, #c72943 100%);
   left: 7%;
   top: 50%;
   transform: translate(0, -50%);
@@ -1007,7 +1007,7 @@ a:hover {
   z-index: 8;
 }
 .photos .right {
-  background: linear-gradient(to right, #80bb38 50%, #b1cd07 100%);
+  background: linear-gradient(to left, #adc900 0, #82be3d 50%, #44912a 100%);
   z-index: 1;
   right: 7%;
   top: 50%;
@@ -1022,16 +1022,16 @@ a:hover {
   height: 100%;
 }
 .photos .rotated .top {
-  background: linear-gradient(#da3244 0, #e46400 60%);
+  background: linear-gradient(#e74c55 0, #e05d34 50%, #e25800 100%);
 }
 .photos .rotated .bottom {
-  background: linear-gradient(#59ad5b 0, #4590d3 100%);
+  background: linear-gradient(to top, #58ab59 0, #63b2b5 50%, #3e86c7 100%);
 }
 .photos .rotated .left {
-  background: linear-gradient(to left, #6e63ad 0%, #af609c 100%);
+  background: linear-gradient(to left, #6e65af 0%, #966bb1 50%, #8e5399 100%);
 }
 .photos .rotated .right {
-  background: linear-gradient(to right, #f9d500 0, #dddb00 60%);
+  background: linear-gradient(to left, #f9d500 0, #d1d500 50%, #a7c400 100%);
 }
 
 .weather {
@@ -1103,6 +1103,48 @@ a:hover {
   transform: translate3d(5%, 0, 0);
 }
 
+.videos {
+  background: linear-gradient(to bottom, #4edf9b 31.5%, #48a6f2 100%);
+}
+.videos:after {
+  content: 'Videos';
+}
+.videos .overflow-wrap {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  border-radius: 22.53125%;
+}
+.videos .marker {
+  position: absolute;
+  display: block;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 15.75%;
+  background: repeating-linear-gradient(45deg, #000 0px, #000 22px, #f3f3f2 23px, #f3f3f2 55px, #000 56px, #000 68px);
+  border-bottom: 2px solid #000;
+}
+.videos .marker.bottom {
+  top: 15.75%;
+  background: repeating-linear-gradient(135deg, #000 0px, #000 22px, #f3f3f2 23px, #f3f3f2 55px, #000 56px, #000 68px);
+  border-bottom-color: #3b514a;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+.videos .marker.bottom:before {
+  position: absolute;
+  z-index: 1;
+  display: block;
+  content: '';
+  width: 100%;
+  height: 90px;
+  bottom: 0;
+  left: 0;
+  background: linear-gradient(to bottom, #fff, transparent);
+  opacity: .2;
+}
+
 .header,
 .footer {
   padding: 16px;
@@ -1129,6 +1171,9 @@ a:hover {
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-around;
+  max-width: 1600px;
+  margin: 0 auto;
+  padding: 16px 0;
 }
 
 .logo {
@@ -1136,6 +1181,7 @@ a:hover {
   vertical-align: middle;
   z-index: 1;
   line-height: 45px;
+  text-align: center;
 }
 .logo span {
   font-weight: normal;

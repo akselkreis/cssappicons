@@ -2,11 +2,6 @@
 .weather{
 	background: linear-gradient(#144bea, #2ec7f9);
 
-	&:after{
-		content: 'Weather';
-
-	}
-
 	.sun{
 		position: absolute;
 		z-index: 1;

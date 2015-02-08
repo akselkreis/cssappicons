@@ -1,9 +1,6 @@
 .videos{
 	background: linear-gradient(to bottom, #4edf9b 31.5%, #48a6f2 100%);
 
-	&:after{
-		content: 'Videos';
-	}
 
 	.overflow-wrap{
 		position: absolute;

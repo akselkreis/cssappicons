@@ -52,10 +52,77 @@ module.exports = function(grunt) {
 				}
 			}
 		},
+
+		jshint: {
+			options: {
+				'-W014':true,
+				'-W018':true,
+				'-W024': true,
+				'-W030':true,
+				'-W032':true,
+				'-W041':true,
+				'-W058':true,
+				'-W067':true,
+				'-W099':true,
+				'-W093':true,
+				asi:true,
+				eqnull: true,
+				eqeqeq: false,
+				smarttabs: true,
+			},
+			beforeconcat: ['js/script.js'],
+			afterconcat:{
+				options:{
+					'-W014':true,
+					'-W018':true,
+					'-W024': true,
+					'-W030':true,
+					'-W032':true,
+					'-W041':true,
+					'-W058':true,
+					'-W067':true,
+					'-W099':true,
+					'-W093':true,
+					asi:true,
+					smarttabs:true,
+					shadow:true
+				},
+				files:{
+					src:['js/build/production.js']
+				}
+			}
+		},
+
+
+		concat: {
+			dist: {
+				src: [
+				'js/zepto.min.js',
+				'js/modernizr.js',
+				'js/script.js'
+				],
+				dest: 'js/build/production.js'
+			}
+		},
+
+		uglify: {
+			build: {
+				src: 'js/build/production.js',
+				dest: 'js/build/production.min.js'
+			}
+		},
 		
 		watch: {
 			options: {
 				//livereload: true,
+			},
+
+			scripts: {
+				files: ['js/*.js','js/**/*.js'],
+				tasks: ['jshint:beforeconcat','concat','uglify'],
+				options: {
+					spawn: false,
+				}
 			},
 
 			css: {
@@ -70,7 +137,7 @@ module.exports = function(grunt) {
 
 	require('load-grunt-tasks')(grunt);
 
-	grunt.registerTask('default', ['sass', 'autoprefixer', 'cmq', 'cssmin', 'watch']);
+	grunt.registerTask('default', ['jshint:beforeconcat','concat', 'uglify', 'sass', 'autoprefixer', 'cmq', 'cssmin', 'watch']);
 
 	grunt.registerTask('dev', ['watch']);
 };

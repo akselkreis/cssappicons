@@ -14,7 +14,38 @@
 		flex-basis: ($padding * 2) + $icon-size;
 		height: auto;
 	}
+
+	.title{
+		text-align: center;
+		left: 0;
+		width: 100%;
+		font-weight: normal;
+		margin: 15px 0 0;
+		font-family: 'HelveticaNeue-Light', Helvetica, sans-serif;
+		@include font-size(30px);
+	}
+
+	&.active{
+		color: $white;
+		position: fixed;
+		top: 77px;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		z-index: 1;
+		background: $black;
+		height: 100%;
+		color: $white;
+
+		.icon{
+			transform: scale(1);
+			//transition: .3s ease all;
+		}
+	}
+
 }
+
+
 
 .icon{
 	border-radius: $icon-radius;
@@ -32,17 +63,6 @@
 
 	@media screen and (min-width: #{$grid-width}){
 		transform: scale(1);
-	}
-
-	&:after{
-		text-align: center;
-		position: absolute;
-		bottom: -20%;
-		left: 0;
-		width: 100%;
-		color: $black;
-
-		@include font-size(30px);
 	}
 
 	&.blank{

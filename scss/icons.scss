@@ -40,12 +40,13 @@
 		.icon{
 			transform: scale(1);
 			//transition: .3s ease all;
+
+			@media screen and (min-width: #{$grid-width}){
+				transform: scale(2) translate(-25%, 0);
+			}
 		}
 	}
-
 }
-
-
 
 .icon{
 	border-radius: $icon-radius;

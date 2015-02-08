@@ -1718,6 +1718,14 @@ a:hover {
 	height: auto;
 }
 
+.icon-wrapper.active .icon {
+	-webkit-transform: scale(2) translate(-25%, 0);
+	-moz-transform: scale(2) translate(-25%, 0);
+	-ms-transform: scale(2) translate(-25%, 0);
+	-o-transform: scale(2) translate(-25%, 0);
+	transform: scale(2) translate(-25%, 0);
+}
+
 .icon {
 	-webkit-transform: scale(1);
 	-moz-transform: scale(1);

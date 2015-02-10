@@ -93,3 +93,23 @@
 	// }
 	
 }
+
+#info-button{
+	color: $black;
+	font-weight: bold;
+	background: rgba(255,255,255,.75);
+	border-radius: 50%;
+	width: 30px;
+	transform: translate(0, -15px);
+	text-decoration: none;
+	line-height: 30px;
+	text-align: center;
+	position: absolute;
+	top: 50%;
+	right: ($padding / 2);
+	z-index: 1;
+
+	@media screen and (min-width: $grid-width){
+		right: $padding;
+	}
+}

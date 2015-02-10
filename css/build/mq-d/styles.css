@@ -1688,6 +1688,28 @@ a:hover {
 	font-family: 'HelveticaNeue-Bold', Helvetica, sans-serif;
 }
 
+#info-button {
+	color: #000;
+	font-weight: bold;
+	background: rgba(255, 255, 255, 0.75);
+	-webkit-border-radius: 50%;
+	-moz-border-radius: 50%;
+	border-radius: 50%;
+	width: 30px;
+	-webkit-transform: translate(0, -15px);
+	-moz-transform: translate(0, -15px);
+	-ms-transform: translate(0, -15px);
+	-o-transform: translate(0, -15px);
+	transform: translate(0, -15px);
+	text-decoration: none;
+	line-height: 30px;
+	text-align: center;
+	position: absolute;
+	top: 50%;
+	right: 16px;
+	z-index: 1;
+}
+
 @media screen and (min-width: 640px) {
 
 .icon-wrapper {
@@ -1716,6 +1738,10 @@ a:hover {
 .header,
 .footer {
 	padding: 16px 32px;
+}
+
+#info-button {
+	right: 32px;
 }
 
 }

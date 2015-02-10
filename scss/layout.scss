@@ -9,7 +9,7 @@
 }
 
 .header{
-	background: $black;
+	background: rgba(0,0,0,.95);
 	color: $white;
 	position: fixed;
 	top: 0;
@@ -29,7 +29,6 @@
 	justify-content: space-around;
 	max-width: 1600px;
 	margin: 77px auto 0 auto;
-	padding: ($padding / 2) 0;
 
 	// @media screen and (min-width: #{$grid-width}){
 	// 	padding: ($padding / 2);
@@ -42,6 +41,7 @@
 	z-index: 1;
 	line-height: 45px;
 	text-align: center;
+	white-space: nowrap;
 	
 	span{
 		font-weight: normal;

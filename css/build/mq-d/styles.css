@@ -11,8 +11,8 @@ html {
 }
 
 body {
-	background: #edebec;
-	color: #000;
+	background: #000;
+	color: white;
 	font-family: 'HelveticaNeue-Light', Helvetica, sans-serif;
 	margin: 0;
 	padding: 0;
@@ -27,7 +27,7 @@ h1 {
 }
 
 a {
-	color: #000;
+	color: #fff;
 }
 
 a:hover {
@@ -42,38 +42,17 @@ a:hover {
 	width: 100%;
 	padding: 16px;
 	overflow: hidden;
+	position: relative;
 }
 
 .icon-wrapper .title {
 	text-align: center;
-	left: 0;
-	width: 100%;
-	font-weight: normal;
-	margin: 15px 0 0;
-	font-family: 'HelveticaNeue-Light', Helvetica, sans-serif;
-	font-size: 30px;
-	font-size: 1.5rem;
-}
-
-.icon-wrapper.active {
-	color: #fff;
-	position: fixed;
-	top: 77px;
+	position: absolute;
+	bottom: 10px;
 	left: 0;
 	right: 0;
-	bottom: 0;
-	z-index: 1;
-	background: #000;
-	height: 100%;
+	font-family: 'HelveticaNeue-Light', Helvetica, sans-serif;
 	color: #fff;
-}
-
-.icon-wrapper.active .icon {
-	-webkit-transform: scale(1);
-	-moz-transform: scale(1);
-	-ms-transform: scale(1);
-	-o-transform: scale(1);
-	transform: scale(1);
 }
 
 .icon {
@@ -412,6 +391,7 @@ a:hover {
 
 .clock {
 	background: black;
+	border: 1px solid rgba(255, 255, 255, 0.3);
 }
 
 .clock .face {
@@ -1628,7 +1608,7 @@ a:hover {
 }
 
 .header {
-	background: #000;
+	background: rgba(0, 0, 0, 0.95);
 	color: #fff;
 	position: fixed;
 	top: 0;
@@ -1662,7 +1642,6 @@ a:hover {
 	justify-content: space-around;
 	max-width: 1600px;
 	margin: 77px auto 0 auto;
-	padding: 16px 0;
 }
 
 .logo {
@@ -1671,6 +1650,7 @@ a:hover {
 	z-index: 1;
 	line-height: 45px;
 	text-align: center;
+	white-space: nowrap;
 }
 
 .logo span {
@@ -1711,19 +1691,18 @@ a:hover {
 @media screen and (min-width: 640px) {
 
 .icon-wrapper {
-	padding: 32px 32px 64px;
+	padding: 32px;
 	-webkit-flex-basis: 320px;
 	-ms-flex-preferred-size: 320px;
 	flex-basis: 320px;
-	height: auto;
+	height: 368px;
 }
 
-.icon-wrapper.active .icon {
-	-webkit-transform: scale(2) translate(-25%, 0);
-	-moz-transform: scale(2) translate(-25%, 0);
-	-ms-transform: scale(2) translate(-25%, 0);
-	-o-transform: scale(2) translate(-25%, 0);
-	transform: scale(2) translate(-25%, 0);
+.icon-wrapper .title {
+	margin: 16px auto 0;
+	font-size: 30px;
+	font-size: 1.5rem;
+	bottom: 20px;
 }
 
 .icon {

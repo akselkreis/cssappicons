@@ -8,8 +8,8 @@ html{
 }
 
 body{
-	background: #edebec;
-	color: $black;
+	background: $black;
+	color: white;
 	font-family: 'HelveticaNeue-Light', Helvetica, sans-serif;
 	margin: 0;
 	padding: 0;
@@ -22,13 +22,12 @@ h1{
 	font-family: 'HelveticaNeue-Bold', Helvetica, sans-serif;
 	@include font-size(20px); 
 
-	// @media screen and (min-width: $grid-width){
-	// 	@include font-size(40px); 
-	// }
+
+	
 }
 
 a{
-	color: $black;
+	color: $white;
 
 	&:hover{
 		color: lighten($black, 20%);

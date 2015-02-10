@@ -2,50 +2,59 @@
 	width: 100%;
 	padding: ($padding / 2);
 	overflow: hidden;
+	position: relative;
 
 	@media screen and (max-width: #{($grid-width - 1)}){
-		flex-basis: 160px;
+		flex-basis: (($icon-size / 2) + $padding);
 		height: 192px;
-		
 	}
 
 	@media screen and (min-width: #{$grid-width}){
-		padding: $padding $padding ($padding * 2);
-		flex-basis: ($padding * 2) + $icon-size;
-		height: auto;
+		padding: $padding;
+		flex-basis: ($icon-size + ($padding * 2));
+		height: 368px;
 	}
 
 	.title{
 		text-align: center;
-		left: 0;
-		width: 100%;
-		font-weight: normal;
-		margin: 15px 0 0;
-		font-family: 'HelveticaNeue-Light', Helvetica, sans-serif;
-		@include font-size(30px);
-	}
-
-	&.active{
-		color: $white;
-		position: fixed;
-		top: 77px;
+		position: absolute;
+		bottom: 10px;
 		left: 0;
 		right: 0;
-		bottom: 0;
-		z-index: 1;
-		background: $black;
-		height: 100%;
+		font-family: 'HelveticaNeue-Light', Helvetica, sans-serif;
 		color: $white;
 
-		.icon{
-			transform: scale(1);
-			//transition: .3s ease all;
-
-			@media screen and (min-width: #{$grid-width}){
-				transform: scale(2) translate(-25%, 0);
-			}
+		@media screen and (min-width: #{$grid-width}){
+			margin: ($padding / 2) auto 0;
+			@include font-size(30px); 
+			bottom: 20px;
 		}
 	}
+
+	// &.active{
+	// 	color: $white;
+		
+	// 	flex-basis: 100%;
+
+	// 	height: 100%;
+	// 	color: $white;
+	// 	padding: $padding;
+
+
+	// 	.icon{
+	// 		transform: scale(1);
+	// 			transform-origin: 50% 50%;
+
+
+	// 	}
+
+	// 	.title{
+	// 		margin: ($padding / 2) auto 0;
+	// 		@include font-size(30px);
+	// 		position: relative;
+	// 		bottom: auto;
+	// 	}
+	// }
 }
 
 .icon{
@@ -57,10 +66,10 @@
 	position: relative;
 	width: $icon-size;
 	z-index: 0;
-	//transition: .5s ease all;
 	-webkit-user-select: none;
 	transform: scale(.5);
 	transform-origin: 0 0;
+
 
 	@media screen and (min-width: #{$grid-width}){
 		transform: scale(1);

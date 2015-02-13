@@ -1680,7 +1680,7 @@ a:hover {
 	-webkit-border-radius: 50%;
 	-moz-border-radius: 50%;
 	border-radius: 50%;
-	top: 43px;
+	top: 44px;
 	right: -25px;
 	-webkit-transform: rotate(-1deg);
 	-moz-transform: rotate(-1deg);
@@ -1702,7 +1702,7 @@ a:hover {
 	-ms-transform: rotate(92deg);
 	-o-transform: rotate(92deg);
 	transform: rotate(92deg);
-	top: 5px;
+	top: 6px;
 	background: -webkit-gradient(linear, left top, right top, from(#FF2265), color-stop(#FF004B), to(#FF0032));
 	background: -webkit-linear-gradient(left, #FF2265, #FF004B, #FF0032);
 	background: -moz-linear-gradient(left, #FF2265, #FF004B, #FF0032);

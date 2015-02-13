@@ -1152,11 +1152,6 @@ a:hover {
 .footer {
   margin: 0 auto;
 }
-@media screen and (min-width: 640px) {
-  .footer {
-    max-width: 75%;
-  }
-}
 
 .wrapper {
   display: flex;
@@ -1174,6 +1169,7 @@ a:hover {
   line-height: 45px;
   text-align: center;
   white-space: nowrap;
+  font-family: 'HelveticaNeue-Bold', Helvetica, sans-serif;
 }
 .logo span {
   font-weight: normal;

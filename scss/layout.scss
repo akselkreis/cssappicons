@@ -19,12 +19,7 @@
 }
 
 .footer{
-	
 	margin: 0 auto;
-
-	@media screen and (min-width: $grid-width){
-		max-width: 75%;
-	}
 }
 
 .wrapper{
@@ -47,7 +42,8 @@
 	line-height: 45px;
 	text-align: center;
 	white-space: nowrap;
-	
+	font-family: 'HelveticaNeue-Bold', Helvetica, sans-serif;
+
 	span{
 		font-weight: normal;
 		font-family: 'HelveticaNeue-Light', Helvetica, sans-serif;

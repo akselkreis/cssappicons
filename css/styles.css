@@ -504,28 +504,29 @@ a:hover {
   position: absolute;
   display: block;
   top: 0;
-  left: -8px;
+  left: -9px;
   transform: rotate(-20deg);
   background: linear-gradient(#38bd19, #33b711);
 }
 .messages .reverse-corner {
   position: absolute;
   background: #fff;
-  width: 7px;
-  height: 7px;
+  width: 8px;
+  height: 9px;
   bottom: -5px;
   left: 66px;
   transform: rotate(23deg);
+  border-radius: 0 50% 0 0;
 }
 .messages .reverse-corner:after {
   content: '';
-  width: 9px;
-  height: 9px;
-  border-radius: 50% 0 0 0;
+  width: 12px;
+  height: 12px;
+  border-radius: 80% 0 0 0;
   position: absolute;
   display: block;
-  top: -1px;
-  left: -1px;
+  top: 1px;
+  left: -3px;
   background: linear-gradient(#38bd19, #33b711);
 }
 

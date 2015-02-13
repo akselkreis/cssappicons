@@ -1,0 +1,64 @@
+.health{
+	background: $white;
+
+	.heart{
+		background: #FF004B;
+		position: absolute;
+		width: 60px;
+		height: 60px;
+		display: block;
+		top: 77px;
+		right: 70px;
+		transform: rotate(-45deg);
+		border-radius: 4px;
+		z-index: 1;
+
+
+		&:before,
+		&:after{
+			display: block;
+			content: '';
+			width: 70px;
+			height: 80px;
+			position: absolute;
+			border-radius: 50%;
+			z-index: 0;
+		}
+
+		&:before{
+			right: -67%;
+			top: -13px;
+			transform: rotate(88deg);
+			background: linear-gradient(-223deg, #FE528A, #FF004B 90%);
+		}
+
+		&:after{
+			top: -45px;
+			left: -4%;
+			transform: rotate(12deg);
+			background: linear-gradient(-150deg, #FE528A, #FF004B 90%);
+		}
+	}
+
+	.flange{
+		display: none;
+		background: blue;
+		position: absolute;
+		display: block;
+		width: 86px;
+		height: 22px;
+		border-radius: 50%;
+		top: 43px;
+		right: -25px;
+		transform: rotate(-1deg);
+		background: linear-gradient(to left, #FF2265, #FF004B, #FF0032);
+		z-index: -1;
+	}
+
+	.left-flange{
+		right: 12px;
+		transform: rotate(92deg);
+		top: 5px;
+		background: linear-gradient(to right, #FF2265, #FF004B, #FF0032);
+	}
+}

@@ -9,7 +9,7 @@
 }
 
 .header{
-	background: rgba(0,0,0,.95);
+	background: rgba(0,0,0,.85);
 	color: $white;
 	position: fixed;
 	top: 0;
@@ -97,7 +97,7 @@
 
 #info-button{
 	color: $black;
-	background: rgba(255,255,255,.75);
+	background: rgba(255,255,255,.85);
 	border-radius: 50%;
 	width: 20px;
 	transform: translate(0, -10px);

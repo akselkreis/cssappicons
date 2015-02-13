@@ -1606,6 +1606,110 @@ a:hover {
 	opacity: .2;
 }
 
+.health {
+	background: #fff;
+}
+
+.health .heart {
+	background: #FF004B;
+	position: absolute;
+	width: 60px;
+	height: 60px;
+	display: block;
+	top: 77px;
+	right: 70px;
+	-webkit-transform: rotate(-45deg);
+	-moz-transform: rotate(-45deg);
+	-ms-transform: rotate(-45deg);
+	-o-transform: rotate(-45deg);
+	transform: rotate(-45deg);
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	border-radius: 4px;
+	z-index: 1;
+}
+
+.health .heart:before,
+.health .heart:after {
+	display: block;
+	content: '';
+	width: 70px;
+	height: 80px;
+	position: absolute;
+	-webkit-border-radius: 50%;
+	-moz-border-radius: 50%;
+	border-radius: 50%;
+	z-index: 0;
+}
+
+.health .heart:before {
+	right: -67%;
+	top: -13px;
+	-webkit-transform: rotate(88deg);
+	-moz-transform: rotate(88deg);
+	-ms-transform: rotate(88deg);
+	-o-transform: rotate(88deg);
+	transform: rotate(88deg);
+	background: -webkit-linear-gradient(313deg, #FE528A, #FF004B 90%);
+	background: -moz-linear-gradient(313deg, #FE528A, #FF004B 90%);
+	background: -o-linear-gradient(313deg, #FE528A, #FF004B 90%);
+	background: linear-gradient(-223deg, #FE528A, #FF004B 90%);
+}
+
+.health .heart:after {
+	top: -45px;
+	left: -4%;
+	-webkit-transform: rotate(12deg);
+	-moz-transform: rotate(12deg);
+	-ms-transform: rotate(12deg);
+	-o-transform: rotate(12deg);
+	transform: rotate(12deg);
+	background: -webkit-linear-gradient(240deg, #FE528A, #FF004B 90%);
+	background: -moz-linear-gradient(240deg, #FE528A, #FF004B 90%);
+	background: -o-linear-gradient(240deg, #FE528A, #FF004B 90%);
+	background: linear-gradient(-150deg, #FE528A, #FF004B 90%);
+}
+
+.health .flange {
+	display: none;
+	background: blue;
+	position: absolute;
+	display: block;
+	width: 86px;
+	height: 22px;
+	-webkit-border-radius: 50%;
+	-moz-border-radius: 50%;
+	border-radius: 50%;
+	top: 43px;
+	right: -25px;
+	-webkit-transform: rotate(-1deg);
+	-moz-transform: rotate(-1deg);
+	-ms-transform: rotate(-1deg);
+	-o-transform: rotate(-1deg);
+	transform: rotate(-1deg);
+	background: -webkit-gradient(linear, right top, left top, from(#FF2265), color-stop(#FF004B), to(#FF0032));
+	background: -webkit-linear-gradient(right, #FF2265, #FF004B, #FF0032);
+	background: -moz-linear-gradient(right, #FF2265, #FF004B, #FF0032);
+	background: -o-linear-gradient(right, #FF2265, #FF004B, #FF0032);
+	background: linear-gradient(to left, #FF2265, #FF004B, #FF0032);
+	z-index: -1;
+}
+
+.health .left-flange {
+	right: 12px;
+	-webkit-transform: rotate(92deg);
+	-moz-transform: rotate(92deg);
+	-ms-transform: rotate(92deg);
+	-o-transform: rotate(92deg);
+	transform: rotate(92deg);
+	top: 5px;
+	background: -webkit-gradient(linear, left top, right top, from(#FF2265), color-stop(#FF004B), to(#FF0032));
+	background: -webkit-linear-gradient(left, #FF2265, #FF004B, #FF0032);
+	background: -moz-linear-gradient(left, #FF2265, #FF004B, #FF0032);
+	background: -o-linear-gradient(left, #FF2265, #FF004B, #FF0032);
+	background: linear-gradient(to right, #FF2265, #FF004B, #FF0032);
+}
+
 .header,
 .footer {
 	padding: 16px;
@@ -1613,7 +1717,7 @@ a:hover {
 }
 
 .header {
-	background: rgba(0, 0, 0, 0.95);
+	background: rgba(0, 0, 0, 0.85);
 	color: #fff;
 	position: fixed;
 	top: 0;
@@ -1696,7 +1800,7 @@ a:hover {
 
 #info-button {
 	color: #000;
-	background: rgba(255, 255, 255, 0.75);
+	background: rgba(255, 255, 255, 0.85);
 	-webkit-border-radius: 50%;
 	-moz-border-radius: 50%;
 	border-radius: 50%;

@@ -3,18 +3,19 @@ module.exports = function(grunt) {
 	// 1. All configuration goes here
 	grunt.initConfig({
 		pkg: grunt.file.readJSON('package.json'),
-	
+
 		sass: {
 		    dist: {
 				options: {
 					style: 'expanded'
 				},
 				files: {
+					"css/critical.css": "scss/critical.scss",
 					"css/styles.css": "scss/hub.scss"
 				}
 			}
 		},
-		
+
 		autoprefixer: {
 			options: {
 				browsers: ['> 0%']
@@ -38,12 +39,16 @@ module.exports = function(grunt) {
 			}
 		},
 
-		
+
 		cssmin: {
 			combine: {
 				files: {
 					'css/build/minified/styles.css': [
 					'css/build/mq-d/styles.css',
+					],
+
+					'css/build/minified/critical.css': [
+					'css/build/mq-d/critical.css',
 					],
 				},
 
@@ -111,7 +116,7 @@ module.exports = function(grunt) {
 				dest: 'js/build/production.min.js'
 			}
 		},
-		
+
 		watch: {
 			options: {
 				//livereload: true,
@@ -131,7 +136,7 @@ module.exports = function(grunt) {
 				options: {
 					spawn: false,
 				}
-			}	
+			}
 		}
 	});
 

@@ -58,6 +58,18 @@ module.exports = function(grunt) {
 			}
 		},
 
+		htmlmin: {                                     // Task
+	    dist: {                                      // Target
+	      options: {                                 // Target options
+	        removeComments: true,
+	        collapseWhitespace: true
+	      },
+	      files: {                                   // Dictionary of files
+	        'index.html': 'index-src.html'
+	      }
+	    },
+		},
+
 		jshint: {
 			options: {
 				'-W014':true,
@@ -97,7 +109,6 @@ module.exports = function(grunt) {
 				}
 			}
 		},
-
 
 		concat: {
 			dist: {
@@ -142,7 +153,6 @@ module.exports = function(grunt) {
 
 	require('load-grunt-tasks')(grunt);
 
-	grunt.registerTask('default', ['jshint:beforeconcat','concat', 'uglify', 'sass', 'autoprefixer', 'cmq', 'cssmin', 'watch']);
-
+	grunt.registerTask('default', ['jshint:beforeconcat','concat', 'uglify', 'sass', 'autoprefixer', 'cmq', 'cssmin', 'htmlmin', 'watch']);
 	grunt.registerTask('dev', ['watch']);
 };

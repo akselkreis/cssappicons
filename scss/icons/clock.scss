@@ -1,9 +1,7 @@
 .clock{
 	background: black;
-
-	&:after{
-		content: 'Clock (iOS7)';
-	}
+	border: 1px solid rgba(255,255,255,.3);
+	
 
 	.face{
 		position: relative;

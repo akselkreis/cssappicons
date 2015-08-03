@@ -858,7 +858,7 @@
 .photos {
   background: #fff;
 }
-.photos div {
+.photos .side {
   height: 40%;
   width: 27%;
   position: absolute;
@@ -903,6 +903,10 @@
   transform: rotate(-45deg);
   width: 100%;
   height: 100%;
+  mix-blend-mode: darken;
+}
+.photos .rotated .side {
+  mix-blend-mode: multiply;
 }
 .photos .rotated .top {
   background: linear-gradient(#e74c55 0, #e05d34 50%, #e25800 100%);
